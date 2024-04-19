@@ -7,6 +7,7 @@ init:
 	cp .env.template .env
 	$(CONDA_EXE) env create -f env.yml
 	$(CONDA_EXE) run -n NAME $(PIP) install -r requirements.txt
+	$(CONDA_EXE) run -n NAME $(PIP) install -e .
 	$(CONDA_EXE) run -n NAME pre-commit install
 
 env:
@@ -23,3 +24,4 @@ clean:
 	rm -rf output/*
 	rm -rf wandb/*
 	rm -rf docs/.quarto docs/*.html
+	rm -rf src/*.egg-info
