@@ -1,0 +1,46 @@
+---
+title: "NAME Blog Post"
+subtitle: "A machine-learning project"
+author: "AUTHOR"
+date: today
+date-format: long
+format:
+  html:
+    html-math-method: katex
+    self-contained: true
+    code-tools: true
+    code-fold: true
+    grid:
+      margin-width: 350px
+execute:
+  warning: false
+reference-location: margin
+citation-location: margin
+bibliography: references.bib
+jupyter: python3
+---
+
+# Introduction
+
+This is an introductory paragraph to the research project [^1].
+
+[^1]: This is a footnote.
+
+
+::: column-margin
+This is a note in the page margin.
+:::
+
+```{python}
+#| fig-cap: "A figure in the main column."
+#| fig-cap-location: margin
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(-10, 10, 100)
+y = np.sin(x)
+
+plt.plot(x, y)
+plt.show()
+```
