@@ -13,7 +13,7 @@ env:
 	$(PIP) freeze > requirements.txt
 
 docs:
-	quarto render docs/blog-post.qmd --to html
+	quarto render docs/index.qmd --to html
 
 live-docs:
 	quarto preview docs/blog-post.qmd --to html --port 7777 --no-browser
