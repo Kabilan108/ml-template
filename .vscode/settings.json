@@ -1,0 +1,44 @@
+{
+    // language-specific
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "[markdown]": {
+        "editor.indentSize": 2,
+        "editor.tabSize": 2
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.indentSize": 2,
+        "editor.tabSize": 2
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.indentSize": 2,
+        "editor.tabSize": 2
+    },
+
+    // editor settings
+    "editor.autoIndent": "full",
+    "editor.indentSize": 4,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+    "editor.trimTrailingWhitespace": true,
+    "editor.trimAutoWhitespace": true,
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always",
+    "editor.autoClosingOvers": "always",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+        {
+            "column": 80,
+            "color": "#BD93F9"
+        },
+        {
+            "column": 100,
+            "color": "#BD93F9"
+        }
+    ]
+}
