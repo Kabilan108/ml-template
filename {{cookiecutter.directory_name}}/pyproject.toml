@@ -1,0 +1,23 @@
+[project]
+name = "{{cookiecutter.short_name}}"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+author = "{{cookiecutter.author_name}}"
+author_email = "{{cookiecutter.author_email}}"
+dependencies = [
+  "httpx",
+  "matplotlib",
+  "numpy",
+  "pandas",
+  "rich",
+  "scikit-learn",
+  "scipy",
+  "seaborn",
+  "wandb",
+]
+
+[tool.uv]
+dev-dependencies = [
+  "ipython-icat",
+]
